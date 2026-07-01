@@ -1,0 +1,29 @@
+{
+  "name": "stackattic",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "pnpm --filter @stackattic/web build",
+    "dev": "pnpm --filter @stackattic/web dev",
+    "lint": "pnpm --filter @stackattic/web lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "turbo:build": "turbo build",
+    "turbo:dev": "turbo dev",
+    "turbo:lint": "turbo lint",
+    "turbo:typecheck": "turbo typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:generate": "pnpm --filter @stackattic/db db:generate",
+    "db:migrate": "pnpm --filter @stackattic/db db:migrate",
+    "db:studio": "pnpm --filter @stackattic/db db:studio"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "turbo": "^2.10.1",
+    "typescript": "^5.9.3"
+  }
+}

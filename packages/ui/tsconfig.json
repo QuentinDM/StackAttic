@@ -1,0 +1,7 @@
+{
+  "extends": "@stackattic/config/typescript/react-library",
+  "compilerOptions": {
+    "rootDir": "src"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
