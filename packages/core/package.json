@@ -1,0 +1,24 @@
+{
+  "name": "@stackattic/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./container": "./src/container/index.ts",
+    "./errors": "./src/errors/index.ts",
+    "./events": "./src/events/index.ts",
+    "./logger": "./src/logger/index.ts",
+    "./modules": "./src/modules/index.ts",
+    "./registry": "./src/registry/index.ts",
+    "./types": "./src/types/index.ts",
+    "./utils": "./src/utils/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@stackattic/config": "workspace:*",
+    "typescript": "^5.9.3"
+  }
+}
