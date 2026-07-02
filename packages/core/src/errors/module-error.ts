@@ -18,3 +18,15 @@ export class ModuleRegistrationError extends ModuleError {
     super(message, cause, "module_registration_error");
   }
 }
+
+export class ModuleBootError extends ModuleError {
+  constructor(message: string, cause?: unknown) {
+    super(message, cause, "module_boot_error");
+  }
+}
+
+export class ModuleShutdownError extends ModuleError {
+  constructor(message: string, cause?: unknown) {
+    super(message, cause, "module_shutdown_error");
+  }
+}

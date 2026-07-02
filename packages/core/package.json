@@ -8,6 +8,7 @@
     "./container": "./src/container/index.ts",
     "./errors": "./src/errors/index.ts",
     "./events": "./src/events/index.ts",
+    "./kernel": "./src/kernel/index.ts",
     "./logger": "./src/logger/index.ts",
     "./modules": "./src/modules/index.ts",
     "./registry": "./src/registry/index.ts",
